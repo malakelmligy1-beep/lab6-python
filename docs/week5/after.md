@@ -56,3 +56,7 @@ After refactoring:
 ## 7. Conclusion
 
 The refactoring improved code readability, maintainability, and code quality while preserving the expected fee calculation behavior. The scholarship student bug was also fixed.
+
+## 8. Pair Programming Reflection
+
+Mai helped me during this assignment by discussing the tasks and supporting me while working through the solutions. Her help made it easier to understand the requirements and complete the work.
