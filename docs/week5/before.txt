@@ -1,0 +1,65 @@
+BEFORE REFACTORING REPORT
+
+1. Ruff Results – grades.py
+
+Command: ruff check grades.py
+
+Total issues: 6
+
+- C901: letter_grade is too complex (6 > 5).
+- PLR2004: Magic value 100.
+- PLR2004: Magic value 90.
+- PLR2004: Magic value 80.
+- PLR2004: Magic value 70.
+- PLR2004: Magic value 60.
+
+2. Pylint Results – grades.py
+
+Command: python -m pylint grades.py
+
+Total messages: 3
+
+- C0114: Missing module docstring.
+- C0116: Missing function or method docstring.
+- R1705: Unnecessary elif after return.
+
+Pylint Score: 7.50/10
+
+3. Ruff Results – legacy_fees.py
+
+Command: ruff check legacy_fees.py
+
+Total issues: 17
+
+- F401: Unused imports (os, math).
+- C901: calc is too complex (9 > 5).
+- PLR0913: Too many function arguments.
+- PLR0917: Too many positional arguments.
+- ARG001: Unused argument y.
+- B006: Mutable default argument extra=[].
+- PLR2004: Magic values used in comparisons (2, 3, 6000).
+- E712: Boolean comparison with True.
+- E711: Comparison to None using !=.
+- F841: Unused local variable tmp.
+- N802: Function name ProcessAll should be lowercase.
+
+4. Pylint Results – legacy_fees.py
+
+Command: python -m pylint legacy_fees.py
+
+Total messages: 15
+
+- C0114: Missing module docstring.
+- C0116: Missing function or method docstrings.
+- W0102: Dangerous default value [] as argument.
+- R0913: Too many arguments (6/5).
+- R0917: Too many positional arguments (6/5).
+- C0121: Incorrect comparison with True.
+- C0121: Incorrect comparison with None.
+- W0613: Unused argument y.
+- W0612: Unused variable tmp.
+- C0103: Function name ProcessAll doesn't follow snake_case.
+- E0606: Possibly using variable fee before assignment.
+- W0611: Unused imports os and math.
+
+Pylint Score: 4.86/10
